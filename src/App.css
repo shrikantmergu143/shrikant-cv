@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
-}
+@import "./template/dependencies/bootstrap/css/bootstrap.min.css";
+@import "./template/dependencies/fontawesome/css/all.min.css";
+@import "./template/dependencies/animate/animate.min.css";
+@import "./template/dependencies/meanmenu/css/meanmenu.min.css";
+@import "./template/dependencies/flaticon/fonts/flaticon.css";
+@import "./template/dependencies/magnific-popup/css/magnific-popup.css";
+@import "./template/dependencies/owl.carousel/css/owl.carousel.min.css";
+@import "./template/dependencies/owl.carousel/css/owl.theme.default.min.css";
+@import "./template/switcher/css/switcher.css";
+@import "./template/switcher/css/dark/apple.css";
+/* @import "./template/switcher/css/dark/azure-radiance.css"; */
+@import "./template/switcher/css/dark/caribbean-green.css";
+@import "./template/switcher/css/dark/cornflower-blue.css";
+@import "./template/switcher/css/dark/electric-violet.css";
+@import "./template/switcher/css/dark/fire-bush.css";
+@import "./template/switcher/css/dark/flush-orange.css";
+@import "./template/switcher/css/dark/pastel-green.css";
+@import "./template/switcher/css/dark/purple.css";
+@import "./template/switcher/css/dark/razzmatazz.css";
+@import "./template/switcher/css/dark/red.css";
+@import "./template/switcher/css/dark/blue.css";
+@import "./template/assets/css/style.css";
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* @import "./template/switcher/css/light/apple.css";
+@import "./template/switcher/css/light/azure-radiance.css";
+@import "./template/switcher/css/light/blue.css";
+@import "./template/switcher/css/light/caribbean-green.css";
+@import "./template/switcher/css/light/cornflower-blue.css";
+@import "./template/switcher/css/light/electric-violet.css";
+@import "./template/switcher/css/light/fire-bush.css";
+@import "./template/switcher/css/light/flush-orange.css";
+@import "./template/switcher/css/light/pastel-green.css";
+@import "./template/switcher/css/light/purple.css";
+@import "./template/switcher/css/light/razzmatazz.css";
+@import "./template/switcher/css/light/red.css"; */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+/* @import "./template/switcher/css/light/"; */
+/* @import "./template/switcher/css";
+@import "./template/switcher/css";
+@import "./template/switcher/css";
+@import "./template/switcher/css";
+@import "./template/switcher/css";
+@import "./template/switcher/css";
+@import "./template/switcher/css";
+@import "./template/switcher/css";
+@import "./template/switcher/css";
+@import "./template/switcher/css";
+@import "./template/switcher/css";
+@import "./template/switcher/css";
+@import "./template/switcher/css"; */
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+/* <!-- Site Stylesheet -->    
+<link rel="stylesheet" href="assets/css/style.css" type="text/css">
+
+<!-- Switcher Only -->
+<link rel="stylesheet" id="switcher-css" type="text/css" href="switcher/css/switcher.css" media="all"> 
+<!-- Light -->
+<link rel="alternate stylesheet" type="text/css" href="switcher/css/light/fire-bush.css" title="fire-bush" media="all">
+<link rel="alternate stylesheet" type="text/css" href="switcher/css/light/pastel-green.css" title="pastel-green" media="all">
+<link rel="alternate stylesheet" type="text/css" href="switcher/css/light/electric-violet.css" title="electric-violet" media="all">
+<link rel="alternate stylesheet" type="text/css" href="switcher/css/light/blue.css" title="blue" media="all">
+<link rel="alternate stylesheet" type="text/css" href="switcher/css/light/razzmatazz.css" title="razzmatazz" media="all">
+<link rel="alternate stylesheet" type="text/css" href="switcher/css/light/caribbean-green.css" title="caribbean-green" media="all">
+<link rel="alternate stylesheet" type="text/css" href="switcher/css/light/cornflower-blue.css" title="cornflower-blue" media="all">
+<link rel="alternate stylesheet" type="text/css" href="switcher/css/light/purple.css" title="purple" media="all">
+<link rel="alternate stylesheet" type="text/css" href="switcher/css/light/azure-radiance.css" title="azure-radiance" media="all">
+<link rel="alternate stylesheet" type="text/css" href="switcher/css/light/flush-orange.css" title="flush-orange" media="all">
+<link rel="alternate stylesheet" type="text/css" href="switcher/css/light/apple.css" title="apple" media="all">
+<link rel="alternate stylesheet" type="text/css" href="switcher/css/light/red.css" title="red" media="all">
+
+<!-- Dark -->
+<link rel="alternate stylesheet" type="text/css" href="switcher/css/dark/fire-bush.css" title="fire-bush" media="all">
+<link rel="alternate stylesheet" type="text/css" href="switcher/css/dark/pastel-green.css" title="pastel-green" media="all">
+<link rel="alternate stylesheet" type="text/css" href="switcher/css/dark/electric-violet.css" title="electric-violet" media="all">
+<link rel="alternate stylesheet" type="text/css" href="switcher/css/dark/blue.css" title="blue" media="all">
+<link rel="alternate stylesheet" type="text/css" href="switcher/css/dark/razzmatazz.css" title="razzmatazz" media="all">
+<link rel="alternate stylesheet" type="text/css" href="switcher/css/dark/caribbean-green.css" title="caribbean-green" media="all">
+<link rel="alternate stylesheet" type="text/css" href="switcher/css/dark/cornflower-blue.css" title="cornflower-blue" media="all">
+<link rel="alternate stylesheet" type="text/css" href="switcher/css/dark/purple.css" title="purple" media="all">
+<link rel="alternate stylesheet" type="text/css" href="switcher/css/dark/azure-radiance.css" title="azure-radiance" media="all">
+<link rel="alternate stylesheet" type="text/css" href="switcher/css/dark/flush-orange.css" title="flush-orange" media="all">
+<link rel="alternate stylesheet" type="text/css" href="switcher/css/dark/apple.css" title="apple" media="all">
+<link rel="alternate stylesheet" type="text/css" href="switcher/css/dark/red.css" title="red" media="all"> */
