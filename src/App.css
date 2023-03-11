@@ -7,9 +7,8 @@
 @import "./template/dependencies/owl.carousel/css/owl.carousel.min.css";
 @import "./template/dependencies/owl.carousel/css/owl.theme.default.min.css";
 @import "./template/switcher/css/switcher.css";
-@import "./template/switcher/css/dark/apple.css";
 /* @import "./template/switcher/css/dark/azure-radiance.css"; */
-@import "./template/switcher/css/dark/caribbean-green.css";
+/* @import "./template/switcher/css/dark/caribbean-green.css";
 @import "./template/switcher/css/dark/cornflower-blue.css";
 @import "./template/switcher/css/dark/electric-violet.css";
 @import "./template/switcher/css/dark/fire-bush.css";
@@ -18,7 +17,8 @@
 @import "./template/switcher/css/dark/purple.css";
 @import "./template/switcher/css/dark/razzmatazz.css";
 @import "./template/switcher/css/dark/red.css";
-@import "./template/switcher/css/dark/blue.css";
+@import "./template/switcher/css/dark/blue.css"; */
+/* @import "./template/switcher/css/dark/apple.css"; */
 @import "./template/assets/css/style.css";
 
 
