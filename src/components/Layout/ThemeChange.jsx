@@ -12,40 +12,40 @@ export default function ThemeChange() {
             <div className="color-changer">
                 <ul>
                     <li>
-                        <Link href="#" rel="fire-bush" title="fire-bush" className="styleswitch"><img src="switcher/images/icons/fire-bush.jpg" alt="Portfolio"/></Link >
+                        <Link rel="fire-bush" title="fire-bush" className="styleswitch"><img src="switcher/images/icons/fire-bush.jpg" alt="Portfolio"/></Link >
                     </li>
                     <li>
-                        <Link href="#" rel="pastel-green" title="pastel-green" className="styleswitch"><img src="switcher/images/icons/pastel-green.jpg" alt="Portfolio"/></Link >
+                        <Link rel="pastel-green" title="pastel-green" className="styleswitch"><img src="switcher/images/icons/pastel-green.jpg" alt="Portfolio"/></Link >
                     </li>
                     <li>
-                        <Link href="#" rel="electric-violet" title="electric-violet" className="styleswitch"><img src="switcher/images/icons/electric-violet.jpg" alt="Portfolio"/></Link >                        
+                        <Link rel="electric-violet" title="electric-violet" className="styleswitch"><img src="switcher/images/icons/electric-violet.jpg" alt="Portfolio"/></Link >                        
                     </li>
                     <li>
-                        <Link href="#" rel="blue" title="blue" className="styleswitch"><img src="switcher/images/icons/blue.jpg" alt="Portfolio"/></Link > 
+                        <Link rel="blue" title="blue" className="styleswitch"><img src="switcher/images/icons/blue.jpg" alt="Portfolio"/></Link > 
                     </li>
                     <li>
-                        <Link href="#" rel="razzmatazz" title="razzmatazz" className="styleswitch"><img src="switcher/images/icons/razzmatazz.jpg" alt="Portfolio"/></Link >                        
+                        <Link rel="razzmatazz" title="razzmatazz" className="styleswitch"><img src="switcher/images/icons/razzmatazz.jpg" alt="Portfolio"/></Link >                        
                     </li>
                     <li>
-                        <Link href="#" rel="caribbean-green" title="caribbean-green" className="styleswitch"><img src="switcher/images/icons/caribbean-green.jpg" alt="Portfolio"/></Link >                        
+                        <Link rel="caribbean-green" title="caribbean-green" className="styleswitch"><img src="switcher/images/icons/caribbean-green.jpg" alt="Portfolio"/></Link >                        
                     </li>
                     <li>
-                        <Link href="#" rel="cornflower-blue" title="cornflower-blue" className="styleswitch"><img src="switcher/images/icons/cornflower-blue.jpg" alt="Portfolio"/></Link >                        
+                        <Link rel="cornflower-blue" title="cornflower-blue" className="styleswitch"><img src="switcher/images/icons/cornflower-blue.jpg" alt="Portfolio"/></Link >                        
                     </li>
                     <li>
-                        <Link href="#" rel="purple" title="purple" className="styleswitch"><img src="switcher/images/icons/purple.jpg" alt="Portfolio"/></Link >                        
+                        <Link rel="purple" title="purple" className="styleswitch"><img src="switcher/images/icons/purple.jpg" alt="Portfolio"/></Link >                        
                     </li>
                     <li>
-                        <Link href="#" rel="azure-radiance" title="azure-radiance" className="styleswitch"><img src="switcher/images/icons/azure-radiance.jpg" alt="Portfolio"/></Link >                        
+                        <Link rel="azure-radiance" title="azure-radiance" className="styleswitch"><img src="switcher/images/icons/azure-radiance.jpg" alt="Portfolio"/></Link >                        
                     </li>
                     <li>
-                        <Link href="#" rel="flush-orange" title="flush-orange" className="styleswitch"><img src="switcher/images/icons/flush-orange.jpg" alt="Portfolio"/></Link >
+                        <Link rel="flush-orange" title="flush-orange" className="styleswitch"><img src="switcher/images/icons/flush-orange.jpg" alt="Portfolio"/></Link >
                     </li>
                     <li>
-                        <Link href="#" rel="apple" title="apple" className="styleswitch"><img src="switcher/images/icons/apple.jpg" alt="Portfolio"/></Link >
+                        <Link rel="apple" title="apple" className="styleswitch"><img src="switcher/images/icons/apple.jpg" alt="Portfolio"/></Link >
                     </li>
                     <li>
-                        <Link href="#" rel="red" title="red" className="styleswitch"><img src="switcher/images/icons/red.jpg" alt="Portfolio"/></Link >
+                        <Link rel="red" title="red" className="styleswitch"><img src="switcher/images/icons/red.jpg" alt="Portfolio"/></Link >
                     </li>
                 </ul>
             </div>

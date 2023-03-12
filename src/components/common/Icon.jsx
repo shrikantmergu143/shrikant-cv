@@ -54,3 +54,8 @@ export const Icon = () =>{
         </svg>
     )
 }
+export const Logo = (props) =>{
+    return(
+        <i className={`common_icon ${props?.className} `} />
+    )
+}

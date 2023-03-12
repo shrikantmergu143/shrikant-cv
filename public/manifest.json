@@ -1,16 +1,16 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "SM - React Developer",
+  "name": "Shrikant Mergu - React Developer",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "favicon.svg",
       "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "type": "image/svg"
     },
     {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
+      "src": "logo.svg",
+      "type": "image/svg",
+      "sizes": "640x512"
     },
     {
       "src": "logo512.png",

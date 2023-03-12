@@ -311,7 +311,7 @@ a.evo-hist {
 
 .color_display_2 {
     clear: both;
-    color: #FFFFFF;
+    color: var(--bs-white-color-text-theme);
     display: inline-block;
     font-size: 12px;
     width: 31px !important;

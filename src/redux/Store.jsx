@@ -1,7 +1,7 @@
 import reducers from "./index";
 // import { createStore, applyMiddleware } from "redux";
 import { legacy_createStore as createStore, applyMiddleware } from "redux";
-import { combineReducers } from "redux";
+// import { combineReducers } from "redux";
 import thunk from "redux-thunk";
 import { persistReducer, persistStore } from "redux-persist";
 import storage from "redux-persist/lib/storage";

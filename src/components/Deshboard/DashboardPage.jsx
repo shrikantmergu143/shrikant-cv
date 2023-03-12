@@ -54,44 +54,44 @@ export default function DashboardPage() {
                                 <li>
                                     <div
                                         className="translate-bottom-100 opacity-animation transition-50 transition-delay-1300">
-                                        <Link href="#"><i className="fab fa-facebook-f"></i></Link >
+                                        <Link><i className="fab fa-facebook-f"></i></Link >
                                     </div>
                                 </li>
                                 <li>
                                     <div
                                         className="translate-bottom-100 opacity-animation transition-50 transition-delay-1500">
-                                        <Link href="#"><i className="fab fa-twitter"></i></Link >
+                                        <Link><i className="fab fa-twitter"></i></Link >
                                     </div>
                                 </li>
                                 <li>
                                     <div
                                         className="translate-bottom-100 opacity-animation transition-50 transition-delay-1700">
-                                        <Link href="#"><i className="fab fa-instagram"></i></Link >
+                                        <Link><i className="fab fa-instagram"></i></Link >
                                     </div>
                                 </li>
                                 <li>
                                     <div
                                         className="translate-bottom-100 opacity-animation transition-50 transition-delay-1900">
-                                        <Link href="#"><i className="fab fa-pinterest-p"></i></Link >
+                                        <Link><i className="fab fa-pinterest-p"></i></Link >
                                     </div>
                                 </li>
                                 <li>
                                     <div
                                         className="translate-bottom-100 opacity-animation transition-50 transition-delay-2100">
-                                        <Link href="#"><i className="fab fa-dribbble"></i></Link >
+                                        <Link><i className="fab fa-dribbble"></i></Link >
                                     </div>
                                 </li>
                                 <li>
                                     <div
                                         className="translate-bottom-100 opacity-animation transition-50 transition-delay-2300">
-                                        <Link href="#"><i className="fab fa-behance"></i></Link >
+                                        <Link><i className="fab fa-behance"></i></Link >
                                     </div>
                                 </li>
                             </ul>
                         </div>
                         <div className="item-website">
                             <div className="translate-bottom-100 opacity-animation transition-50 transition-delay-2400">
-                                <Link href="#"> www.mywebsite.com</Link >
+                                <Link> www.mywebsite.com</Link >
                             </div>
                         </div>
                     </div>
@@ -116,7 +116,7 @@ export default function DashboardPage() {
                                 </div>                            
                             </div>
                             <div className="translate-bottom-50 opacity-animation transition-150 transition-delay-1000">
-                                <Link href="#" className="download-btn btn-fill">DOWNLOAD CV<i className="flaticon-download"></i></Link >
+                                <Link className="download-btn btn-fill">DOWNLOAD CV<i className="flaticon-download"></i></Link >
                             </div>
                         </div>
                     </div>
@@ -283,10 +283,10 @@ export default function DashboardPage() {
                                     <img src="./template/media/service/service1.png" alt="service"/>
                                 </div>
                                 <div className="item-content">
-                                    <h3 className="item-title"><Link href="#">UI/UX Design</Link ></h3>
+                                    <h3 className="item-title"><Link>UI/UX Design</Link ></h3>
                                     <p>There are many variations passages of Lorem Ipsum available majority have dummy
                                         passage.</p>
-                                    <Link href="#" className="item-btn">Read More</Link >
+                                    <Link className="item-btn">Read More</Link >
                                 </div>
                             </div>
                         </div>
@@ -298,10 +298,10 @@ export default function DashboardPage() {
                                     <img src="./template/media/service/service2.png" alt="service"/>
                                 </div>
                                 <div className="item-content">
-                                    <h3 className="item-title"><Link href="#">Web Development</Link ></h3>
+                                    <h3 className="item-title"><Link>Web Development</Link ></h3>
                                     <p>There are many variations passages of Lorem Ipsum available majority have dummy
                                         passage.</p>
-                                    <Link href="#" className="item-btn">Read More</Link >
+                                    <Link className="item-btn">Read More</Link >
                                 </div>
                             </div>
                         </div>
@@ -313,10 +313,10 @@ export default function DashboardPage() {
                                     <img src="./template/media/service/service3.png" alt="service"/>
                                 </div>
                                 <div className="item-content">
-                                    <h3 className="item-title"><Link href="#">Apps Development</Link ></h3>
+                                    <h3 className="item-title"><Link>Apps Development</Link ></h3>
                                     <p>There are many variations passages of Lorem Ipsum available majority have dummy
                                         passage.</p>
-                                    <Link href="#" className="item-btn">Read More</Link >
+                                    <Link className="item-btn">Read More</Link >
                                 </div>
                             </div>
                         </div>
@@ -328,10 +328,10 @@ export default function DashboardPage() {
                                     <img src="./template/media/service/service4.png" alt="service"/>
                                 </div>
                                 <div className="item-content">
-                                    <h3 className="item-title"><Link href="#">Strategy Solutions</Link ></h3>
+                                    <h3 className="item-title"><Link>Strategy Solutions</Link ></h3>
                                     <p>There are many variations passages of Lorem Ipsum available majority have dummy
                                         passage.</p>
-                                    <Link href="#" className="item-btn">Read More</Link >
+                                    <Link className="item-btn">Read More</Link >
                                 </div>
                             </div>
                         </div>
@@ -343,10 +343,10 @@ export default function DashboardPage() {
                                     <img src="./template/media/service/service5.png" alt="service"/>
                                 </div>
                                 <div className="item-content">
-                                    <h3 className="item-title"><Link href="#">Digital Marketing</Link ></h3>
+                                    <h3 className="item-title"><Link>Digital Marketing</Link ></h3>
                                     <p>There are many variations passages of Lorem Ipsum available majority have dummy
                                         passage.</p>
-                                    <Link href="#" className="item-btn">Read More</Link >
+                                    <Link className="item-btn">Read More</Link >
                                 </div>
                             </div>
                         </div>
@@ -358,10 +358,10 @@ export default function DashboardPage() {
                                     <img src="./template/media/service/service6.png" alt="service"/>
                                 </div>
                                 <div className="item-content">
-                                    <h3 className="item-title"><Link href="#">Social Media</Link ></h3>
+                                    <h3 className="item-title"><Link>Social Media</Link ></h3>
                                     <p>There are many variations passages of Lorem Ipsum available majority have dummy
                                         passage.</p>
-                                    <Link href="#" className="item-btn">Read More</Link >
+                                    <Link className="item-btn">Read More</Link >
                                 </div>
                             </div>
                         </div>
@@ -653,7 +653,7 @@ export default function DashboardPage() {
                                         <li>24/7 Support Done</li>
                                     </ul>
                                 </div>
-                                <Link href="#" className="item-btn btn-fill">HIRE ME</Link >
+                                <Link className="item-btn btn-fill">HIRE ME</Link >
                             </div>
                         </div>
                     </div>
@@ -676,7 +676,7 @@ export default function DashboardPage() {
                                         <li>24/7 Support Done</li>
                                     </ul>
                                 </div>
-                                <Link href="#" className="item-btn btn-fill">HIRE ME</Link >
+                                <Link className="item-btn btn-fill">HIRE ME</Link >
                             </div>
                         </div>
                     </div>
@@ -699,7 +699,7 @@ export default function DashboardPage() {
                                         <li>24/7 Support Done</li>
                                     </ul>
                                 </div>
-                                <Link href="#" className="item-btn btn-fill">HIRE ME</Link >
+                                <Link className="item-btn btn-fill">HIRE ME</Link >
                             </div>
                         </div>
                     </div>
@@ -727,7 +727,7 @@ export default function DashboardPage() {
                                     <div className="entry-meta">
                                         <ul>
                                             <li><i className="far fa-calendar-alt"></i>14 July, 2017</li>
-                                            <li><i className="far fa-user"></i><Link href="#">Jessica</Link ></li>
+                                            <li><i className="far fa-user"></i><Link>Jessica</Link ></li>
                                         </ul>
                                     </div>
                                     <h3 className="item-title"><Link href="single-blog.html">Harbour amid a Slowen
@@ -751,7 +751,7 @@ export default function DashboardPage() {
                                     <div className="entry-meta">
                                         <ul>
                                             <li><i className="far fa-calendar-alt"></i>14 July, 2017</li>
-                                            <li><i className="far fa-user"></i><Link href="#">Amac Jajah</Link ></li>
+                                            <li><i className="far fa-user"></i><Link>Amac Jajah</Link ></li>
                                         </ul>
                                     </div>
                                     <h3 className="item-title"><Link href="single-blog.html">Trip To Iqaluit In
@@ -775,7 +775,7 @@ export default function DashboardPage() {
                                     <div className="entry-meta">
                                         <ul>
                                             <li><i className="far fa-calendar-alt"></i>14 July, 2017</li>
-                                            <li><i className="far fa-user"></i><Link href="#">Sergio Pliego</Link ></li>
+                                            <li><i className="far fa-user"></i><Link>Sergio Pliego</Link ></li>
                                         </ul>
                                     </div>
                                     <h3 className="item-title"><Link href="single-blog.html">World Travel Holdings
