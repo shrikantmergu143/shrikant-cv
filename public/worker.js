@@ -3,8 +3,6 @@ const CACHE_NAME = 'Shrikant Mergu';
 const urlsToCache = [
   '/',
   '/assets/**.*',
-  '/css/main.css',
-  '/css/mycss.css'
 ];
 
 // Install a service worker
