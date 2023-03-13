@@ -2,12 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/logo64.png" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta name="description" content="Shrikant Mergu - React Developer" />
     <meta name="Shrikant Mergu" content="Shrikant Mergu - React Developer" />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo512.png" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <!--
@@ -29,10 +29,10 @@
   <body class="loaded bg-white">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-        <script>
+<!--         <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', function () {
-            navigator.serviceWorker.register('worker.js').then(function (registration) {console.log('Worker registration successful',registration.scope);},function (err) {console.log('Worker registration failed', err);})
+            navigator.serviceWorker.register('%PUBLIC_URL%/worker.js').then(function (registration) {console.log('Worker registration successful',registration.scope);},function (err) {console.log('Worker registration failed', err);})
             .catch(function (err) {
               console.log(err);
             });
@@ -41,7 +41,7 @@
       } else {
         console.log('Service Worker is not supported by browser.');
       }
-    </script>
+    </script> -->
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
