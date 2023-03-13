@@ -3,19 +3,19 @@
   "name": "Shrikant Mergu - React Developer",
   "icons": [
     {
-      "src": "smlogo.webp",
+      "src": "logo64.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/svg"
     },
     {
-      "src": "smlogo.webp",
+      "src": "logo512.png",
       "type": "image/svg",
-      "sizes": "640x512"
+      "sizes": "512x512"
     },
     {
-      "src": "smlogo.webp",
+      "src": "logo512.png",
       "type": "image/webp",
-      "sizes": "500x311"
+      "sizes": "600x600"
     }
   ],
   "start_url": ".",
