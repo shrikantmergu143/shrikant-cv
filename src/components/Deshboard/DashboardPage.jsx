@@ -31,16 +31,16 @@ export default function DashboardPage() {
                                 <div className="item-top-text">Hello</div>
                             </div>
                             <div className="translate-bottom-100 opacity-animation transition-150 transition-delay-800">
-                                <h1 className="item-title">I’m Maria Lopez</h1>
+                                <h1 className="item-title">I’m Shrikant Mergu</h1>
                             </div>
                             <div className="translate-bottom-100 opacity-animation transition-150 transition-delay-1100">
                                 <div className="cd-intro">
                                     <h2 className="small-text cd-headline clip">
                                         <span className="item-subtitle">A Freelance</span>
                                         <span className="cd-words-wrapper">
-                                            <b className="item-subtitle is-visible">Web Developer</b>
-                                            <b>UI/UX Designer</b>
-                                            <b>WordPress Developer</b>
+                                            <b className="item-subtitle is-visible">React Developer</b>
+                                            {/* <b>UI/UX Designer</b>
+                                            <b>WordPress Developer</b>*/}
                                             <b>Web Designer</b>
                                         </span>
                                     </h2>
@@ -122,7 +122,7 @@ export default function DashboardPage() {
                     </div>
                     <div className="col-lg-8 col-12">
                         <div className="fxt-about-box-layout2">
-                            <h3 className="item-title">Maria Lopez</h3>
+                            <h3 className="item-title">Shrikant Mergu</h3>
                             <div className="item-subtitle">Graphic Designer &amp; Web Developer</div>
                             <p>There are many variations of passages of Lorem Ipsum available but the majority is have
                                 suffered alteration in that some form by injected humour or randomised that words which
