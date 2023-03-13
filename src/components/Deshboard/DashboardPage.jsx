@@ -36,7 +36,7 @@ export default function DashboardPage() {
                             <div className="translate-bottom-100 opacity-animation transition-150 transition-delay-1100">
                                 <div className="cd-intro">
                                     <h2 className="small-text cd-headline clip">
-                                        <span className="item-subtitle">A Freelance</span>
+                                        <span className="item-subtitle">A Freelance </span>
                                         <span className="cd-words-wrapper">
                                             <b className="item-subtitle is-visible">React Developer</b>
                                             {/* <b>UI/UX Designer</b>

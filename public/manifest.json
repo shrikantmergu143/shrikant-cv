@@ -13,9 +13,9 @@
       "sizes": "640x512"
     },
     {
-      "src": "logo.svg",
+      "src": "logo144.svg",
       "type": "image/svg",
-      "sizes": "640x512"
+      "sizes": "144x144"
     }
   ],
   "start_url": ".",
