@@ -31,7 +31,9 @@
 }
 
 body.bg-white{
-  --bs-default-theme:#2cb4fe;
+  --bs-default-theme-rgb:44, 180, 254;
+  --bs-default-theme:rgb(var(--bs-default-theme-rgb));
+  --bs-default-bg-theme:rgb(var(--bs-default-theme-rgb), 0.1);
   --bs-white-color-text-theme:#ffffff;
   --bs-white-color-bg-theme:#ffffff;
   --bs-white-secondary-theme:#b0b0b0;
@@ -52,6 +54,7 @@ body.bg-white{
 .fxt-main-banner-box-layout1 .top-content .item-content .item-subtitle{
   color: var(--bs-white-color-bg-text-theme);
 }
+.text-primary{color: var(--bs-default-theme)!important;}
 
 /* .fxt-offcanvas-wrap .fxt-offcanvas-content .logo-area .default-logo {
   background-repeat: no-repeat;

@@ -1,0 +1,15 @@
+.fxt-main-banner-box-layout1 .top-content .item-img img{height: 160px;width: 160px;}
+.fxt-about-box-layout2 .personal-info .info-list ul li span{min-width: 110px;}
+.fxt-skill-section_custome .fxt-service-box-layout1 i.bx{font-size: 80px;}
+.fxt-skill-section_custome .mockups{height: 240px;width: 240px;margin: 0 auto}
+.fxt-skill-section_custome .mockups .fxt-service-box-layout1{padding: 40px!important;background-color: rgba(12, 17, 41, 0.85);}
+.fxt-skill-section_custome .mockups .item-title{font-size: 1.3rem;font-weight: 500;}
+.fxt-skill-section_custome .row{display: grid;grid-template-columns: auto auto auto auto;}
+
+.fxt-skill-section_custome .mockups .fxt-service-box-layout1{
+    border: 1.7px solid var(--bs-default-theme)!important;
+    border-radius: 5px!important;
+    box-shadow: 4px 5px 4px 3px var(--bs-default-bg-theme)!important;
+    opacity: .93!important;
+    overflow: hidden!important;
+    transition: all .4s ease 0s!important;}

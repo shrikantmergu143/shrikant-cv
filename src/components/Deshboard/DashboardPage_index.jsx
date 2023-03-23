@@ -6,14 +6,78 @@ import portfolio1 from "./../../template/media/portfolio/portfolio1.jpg"
 import map from "./../../template/media/figure/map.png";
 import Firebase from "./../../firebase/Firebase";
 import { Link } from "react-router-dom";
+import { Icon } from '../common/Icon';
 
+export function getAge(d1){
+    var now = new Date();
+    var d2 = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59);
+    var diff = d2.getTime() - d1.getTime();
+    return Math.floor(diff / (1000 * 60 * 60 * 24 * 365.25));
+}
+export const Skills = [
+    {
+        icon:"bx bxl-react text-primary",
+        title:"ReactJS",
+        percentage:80,
+    },
+    {
+        icon:"bx bxl-react text-primary",
+        title:"React Native",
+        percentage:80,
+    },
+    {
+        icon:"bx bxl-javascript text-primary",
+        title:"JavaScript",
+        percentage:80,
+    },
+    {
+        icon:"bx bxl-nodejs text-primary",
+        title:"NodeJS",
+        percentage:80,
+    },
+    {
+        icon:"bx bxl-python text-primary",
+        title:"Python",
+        percentage:80,
+    },
+    {
+        icon:"bx bxl-redux text-primary",
+        title:"React Redux",
+        percentage:80,
+    },
+    {
+        icon:"bx bxl-php text-primary",
+        title:"PHP",
+        percentage:80,
+    },
+    {
+        icon:"bx bxl-mongodb text-primary",
+        title:"MongoDB",
+        percentage:80,
+    },
+    {
+        icon:"bx bxl-django text-primary",
+        title:"DJango",
+        percentage:80,
+    },
+    {
+        icon:"bx bxl-firebase text-primary",
+        title:"Firebase",
+        percentage:80,
+    },
+    {
+        icon:"bx bxl-git text-primary",
+        title:"Git",
+        percentage:80,
+    }
+]
 export default function DashboardPage() {
-    const [state, setState] = useState(false);
-    useEffect(() => {
-      setTimeout(()=>setState(true), 300);
-      console.log("Firebase", Firebase)
-  
-    }, []);
+        const [state, setState] = useState(false);
+        useEffect(() => {
+        setTimeout(()=>setState(true), 300);
+        console.log("Firebase", Firebase)
+    
+        });
   return (
     <React.Fragment>
         <section className="fxt-main-banner-section bg-common">
@@ -35,12 +99,12 @@ export default function DashboardPage() {
                             <div className="translate-bottom-100 opacity-animation transition-150 transition-delay-1100">
                                 <div className="cd-intro">
                                     <h2 className="small-text cd-headline clip">
-                                        <span className="item-subtitle">A Freelance </span>
-                                        <span className="cd-words-wrapper">
-                                            <b className="item-subtitle is-visible">React Developer</b>
+                                        <span className="item-subtitle">Become a </span>
+                                        <span className="px-2 cd-words-wrapper">
+                                            <b className="item-subtitle is-visible"> React Developer </b>
                                             {/* <b>UI/UX Designer</b>
                                             <b>WordPress Developer</b>*/}
-                                            <b>Web Designer</b>
+                                            <b> Web Developer</b>
                                         </span>
                                     </h2>
                                 </div>
@@ -90,7 +154,7 @@ export default function DashboardPage() {
                         </div>
                         <div className="item-website">
                             <div className="translate-bottom-100 opacity-animation transition-50 transition-delay-2400">
-                                <Link> www.mywebsite.com</Link >
+                                <Link to={"https://shrikantresume-react.vercel.app/"} target={"_blanck"} > https://shrikantresume-react.vercel.app/</Link >
                             </div>
                         </div>
                     </div>
@@ -122,33 +186,35 @@ export default function DashboardPage() {
                     <div className="col-lg-8 col-12">
                         <div className="fxt-about-box-layout2">
                             <h3 className="item-title">Shrikant Mergu</h3>
-                            <div className="item-subtitle">Graphic Designer &amp; Web Developer</div>
-                            <p>There are many variations of passages of Lorem Ipsum available but the majority is have
-                                suffered alteration in that some form by injected humour or randomised that words which
-                                don't
-                                look even slightly believable. If you are going a to use a passage of Lorem Ipsum you
-                                need to be sure
-                                there isn't anything embarrassing. There are is many variations of passages available.
-                            </p>
+                            <div className="item-subtitle">React Developer &amp; Web Developer</div>
+                            <p>Hi Everyone, I am <span className={"text-primary"}>Shrikant Mergu</span> from Solapur, India. I am a working as a React Developer and complete a graduation in Bachelor's Computer Application from HNCC Solapur.</p>
                             <div className="personal-info">
                                 <div className="row">
-                                    <div className="col-md-6 col-12">
+                                    <div className="col-md-5 col-12">
                                         <div className="info-list">
                                             <ul>
-                                                <li><span>Birthday:</span>05. 09.1975</li>
-                                                <li><span>City:</span>Sydney</li>
-                                                <li><span>Study:</span>Australia University</li>
-                                                <li><span>Website:</span>www.mywebsite.com</li>
+                                                <li><span>Birthday:</span>30. 06. 1999</li>
+                                                <li><span>City:</span>Solapur</li>
+                                                <li><span>Study:</span>Solapur University</li>
+                                                {/* <li><span>Website:</span><Link to={"https://shrikantresume-react.vercel.app/"}>https://shrikantresume-react.vercel.app/</Link></li> */}
                                             </ul>
                                         </div>
                                     </div>
-                                    <div className="col-md-6 col-12">
+                                    <div className="col-md-7 col-12">
                                         <div className="info-list">
                                             <ul>
-                                                <li><span>Age:</span>33 Years</li>
-                                                <li><span>Degree:</span>Master</li>
-                                                <li><span>Mail:</span>email@example.com</li>
-                                                <li><span>Phone:</span>+01 458 789 4492</li>
+                                                <li><span>Age:</span>{getAge(new Date(1999, 6, 30, 0, 0, 0))} Years</li>
+                                                <li><span>Degree:</span>Master - Persuing</li>
+                                                <li><span>Mail:</span>
+                                                    <Link to={"mailto:shrikantmergu143@gmail.com"}>shrikantmergu143@gmail.com
+                                                    </Link>
+                                                </li>
+                                                <li>
+                                                    <span>Phone:</span>
+                                                    <Link to={"tel:+9028309906"}>
+                                                    +91 9028 309 906
+                                                    </Link>
+                                                </li>
                                             </ul>
                                         </div>
                                     </div>
@@ -159,8 +225,31 @@ export default function DashboardPage() {
                 </div>
             </div>
         </section>
-      
-        <section className="fxt-skill-section" id="section3">
+        <section className="fxt-skill-section fxt-skill-section_custome" id="section3">
+            <div className="container">
+                <div className="fxt-heading-layout1">
+                    <h2 className="heading-title">Professional <strong class="text-primary">Skill </strong></h2>
+                    <div className="heading-line"></div>
+                </div>              
+                <div className="row">
+                    {Skills?.map((item, index)=>(
+                        <div key={index} className="mockups has-animation active-animation">
+                            <div className="translate-left-10 opacity-animation transition-200 transition-delay-100">
+                                <div className="fxt-service-box-layout1">
+                                    <div className="item-img animation-delay0">
+                                        <i className={`${item?.icon} `} />
+                                    </div>
+                                    <div className="item-content">
+                                        <h3 className="item-title"><Link>{item?.title}</Link ></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </section>
+        <section className="fxt-skill-section" id="section3" hidden>
             <div className="container">                
                 <div className="row">
                     <div className="col-lg-6">
@@ -171,24 +260,24 @@ export default function DashboardPage() {
                             </div>
                             <ul className="fxt-skill-box-layout1">
                                 <li className="single-item">
-                                    <label>UI/UX Designer</label>
+                                    <label>ReactJS</label>
                                     <div className="progress">
                                         <div className="progress-bar wow slideInLeft" data-wow-delay="0ms" data-wow-duration="2000ms"
                                             role="progressbar"
                                             style={{width: "85%", visibility: "visible", animationDuration: "2000ms", animationDelay: "0ms", animationName: "slideInLeft"}}>
                                             <span>85%</span>
                                         </div>
-                                    </div>                                   
+                                    </div>
                                 </li>
                                 <li className="single-item">
                                     <label>JavaScript</label>
                                     <div className="progress">
                                         <div className="progress-bar wow slideInLeft" data-wow-delay="200ms" data-wow-duration="2000ms"
                                             role="progressbar"
-                                            style={{width: "85%", visibility: "visible", animationDuration: "2000ms", animationDelay: "0ms", animationName: "slideInLeft"}}>
-                                            <span>61%</span>
+                                            style={{width: "80%", visibility: "visible", animationDuration: "2000ms", animationDelay: "0ms", animationName: "slideInLeft"}}>
+                                            <span>80%</span>
                                         </div>
-                                    </div>                                    
+                                    </div>
                                 </li>
                                 <li className="single-item">
                                     <label>HTML5</label>
@@ -198,17 +287,27 @@ export default function DashboardPage() {
                                             style={{width: "85%", visibility: "visible", animationDuration: "2000ms", animationDelay: "300ms", animationName: "slideInLeft"}}>
                                             <span>90%</span>
                                         </div>
-                                    </div>                                    
+                                    </div>
+                                </li>
+                                <li className="single-item">
+                                    <label>React Native</label>
+                                    <div className="progress">
+                                        <div className="progress-bar wow slideInLeft" data-wow-delay="400ms" data-wow-duration="2000ms"
+                                            role="progressbar"
+                                            style={{width: "60%", visibility: "visible", animationDuration: "2000ms", animationDelay: "4000ms", animationName: "slideInLeft"}}>
+                                            <span>60%</span>
+                                        </div>
+                                    </div>
                                 </li>
                                 <li className="single-item">
                                     <label>PHP / MYSQL</label>
                                     <div className="progress">
                                         <div className="progress-bar wow slideInLeft" data-wow-delay="400ms" data-wow-duration="2000ms"
                                             role="progressbar"
-                                            style={{width: "85%", visibility: "visible", animationDuration: "2000ms", animationDelay: "4000ms", animationName: "slideInLeft"}}>
+                                            style={{width: "69%", visibility: "visible", animationDuration: "2000ms", animationDelay: "4000ms", animationName: "slideInLeft"}}>
                                             <span>69%</span>
                                         </div>
-                                    </div>                                   
+                                    </div>
                                 </li>
                             </ul>
                         </div>
@@ -221,34 +320,34 @@ export default function DashboardPage() {
                             </div>
                             <ul className="fxt-skill-box-layout2">
                                 <li className="single-item">
-                                    <label>Photoshop</label>
+                                    <label>ReactJS</label>
                                     <div className="progress">
                                         <div className="progress-bar wow slideInLeft" data-wow-delay="0ms" data-wow-duration="2000ms"
                                             role="progressbar"
                                             style={{width: "85%", visibility: "visible", animationDuration: "2000ms", animationDelay: "0ms", animationName: "slideInLeft"}}>
                                             <span>85%</span>
                                         </div>
-                                    </div>                                   
+                                    </div>
                                 </li>
                                 <li className="single-item">
-                                    <label>Illustrator</label>
+                                    <label>React Redux</label>
                                     <div className="progress">
                                         <div className="progress-bar wow slideInLeft" data-wow-delay="200ms" data-wow-duration="2000ms"
                                             role="progressbar"
-                                            style={{width: "85%", visibility: "visible", animationDuration: "2000ms", animationDelay: "0ms", animationName: "slideInLeft"}}>
-                                            <span>61%</span>
+                                            style={{width: "93%", visibility: "visible", animationDuration: "2000ms", animationDelay: "0ms", animationName: "slideInLeft"}}>
+                                            <span>93%</span>
                                         </div>
-                                    </div>                                    
+                                    </div>
                                 </li>
                                 <li className="single-item">
-                                    <label>AngularJS</label>
+                                    <label>NODEJS</label>
                                     <div className="progress">
                                         <div className="progress-bar wow slideInLeft" data-wow-delay="300ms" data-wow-duration="2000ms"
                                             role="progressbar"
-                                            style={{width: "85%", visibility: "visible", animationDuration: "2000ms", animationDelay: "300ms", animationName: "slideInLeft"}}>
-                                            <span>90%</span>
+                                            style={{width: "65%", visibility: "visible", animationDuration: "2000ms", animationDelay: "300ms", animationName: "slideInLeft"}}>
+                                            <span>65%</span>
                                         </div>
-                                    </div>                                    
+                                    </div>
                                 </li>
                                 <li className="single-item">
                                     <label>PHP</label>
@@ -258,7 +357,17 @@ export default function DashboardPage() {
                                             style={{width: "85%", visibility: "visible", animationDuration: "2000ms", animationDelay: "4000ms", animationName: "slideInLeft"}}>
                                             <span>69%</span>
                                         </div>
-                                    </div>                                   
+                                    </div>
+                                </li>
+                                <li className="single-item">
+                                    <label>Laravel</label>
+                                    <div className="progress">
+                                        <div className="progress-bar wow slideInLeft" data-wow-delay="400ms" data-wow-duration="2000ms"
+                                            role="progressbar"
+                                            style={{width: "50%", visibility: "visible", animationDuration: "2000ms", animationDelay: "4000ms", animationName: "slideInLeft"}}>
+                                            <span>50%</span>
+                                        </div>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
@@ -633,7 +742,7 @@ export default function DashboardPage() {
                     <div className="heading-line"></div>
                 </div>
                 <div className="row">
-                    <div className="col-lg-4 has-animation">
+                    <div className="col-lg-4 has-animation  active-animation">
                         <div className="translate-left-10 opacity-animation transition-200 transition-delay-100">
                             <div className="fxt-pricing-box-layout1">
                                 <div className="pricing-amount">
@@ -656,7 +765,7 @@ export default function DashboardPage() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-4 has-animation">
+                    <div className="col-lg-4 has-animation  active-animation">
                         <div className="translate-left-10 opacity-animation transition-200 transition-delay-400">
                             <div className="fxt-pricing-box-layout1">
                                 <div className="pricing-amount">
@@ -679,7 +788,7 @@ export default function DashboardPage() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-4 has-animation">
+                    <div className="col-lg-4 has-animation  active-animation">
                         <div className="translate-left-10 opacity-animation transition-200 transition-delay-700">
                             <div className="fxt-pricing-box-layout1">
                                 <div className="pricing-amount">
@@ -714,7 +823,7 @@ export default function DashboardPage() {
                     <div className="heading-line"></div>
                 </div>
                 <div className="row">
-                    <div className="col-lg-4 has-animation">
+                    <div className="col-lg-4 has-animation  active-animation">
                         <div className="translate-left-10 opacity-animation transition-200 transition-delay-100">
                             <div className="fxt-blog-box-layout1">
                                 <div className="item-img">
@@ -738,7 +847,7 @@ export default function DashboardPage() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-4 has-animation">
+                    <div className="col-lg-4 has-animation  active-animation">
                         <div className="translate-left-10 opacity-animation transition-200 transition-delay-400">
                             <div className="fxt-blog-box-layout1">
                                 <div className="item-img">
@@ -762,7 +871,7 @@ export default function DashboardPage() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-4 has-animation">
+                    <div className="col-lg-4 has-animation  active-animation">
                         <div className="translate-left-10 opacity-animation transition-200 transition-delay-700">
                             <div className="fxt-blog-box-layout1">
                                 <div className="item-img">

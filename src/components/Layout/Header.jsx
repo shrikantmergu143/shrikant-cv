@@ -2,7 +2,7 @@ import React from 'react'
 import logoDefault from "./../../template/media/logo-default.png";
 import logoSticky from "./../../template/media/logo-sticky.png";
 import { Link } from "react-router-dom";
-import { Logo } from '../common/Icon';
+import { Icon } from '../common/Icon';
 
 export default function Header() {
   return (
@@ -13,11 +13,11 @@ export default function Header() {
                     <div className="logo-area">
                         <Link href="index-2.html" className="default-logo">
                             {/* <img src={logoDefault} alt="logo" className="img-fluid"/> */}
-                            <Logo className={"logo"} />
+                            <Icon className={"logo"} />
                         </Link>
                         <Link href="index-2.html" className="sticky-logo">
                             {/* <img src={logoSticky} alt="logo" className="img-fluid"/> */}
-                            <Logo className={"logo"} />
+                            <Icon className={"logo"} />
                         </Link>
                     </div>
                 </div>

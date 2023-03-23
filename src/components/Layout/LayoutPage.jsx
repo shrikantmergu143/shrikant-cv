@@ -11,7 +11,7 @@ import ThemeChange from "./ThemeChange";
 import Footer from "./Footer"
 import {Outlet} from "react-router"
 
-export default function LayoutPage() {
+export default function LayoutPage(props) {
   const [state, setState] = useState(false);
   useEffect(() => {
     setTimeout(()=>setState(true), 300);
@@ -25,7 +25,7 @@ export default function LayoutPage() {
             <Outlet/>
           <Footer/>
       </div>
-    <ThemeChange/>
+      <ThemeChange/>
     </aside>
   )
 }
