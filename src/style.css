@@ -2,7 +2,7 @@
 .fxt-about-box-layout2 .personal-info .info-list ul li span{min-width: 110px;}
 .fxt-skill-section_custome .fxt-service-box-layout1 i.bx{font-size: 80px;}
 .fxt-skill-section_custome .mockups{margin-bottom: 30px;}
-.fxt-skill-section_custome .mockups .fxt-service-box-layout1{padding: 40px!important;background-color: rgba(12, 17, 41, 0.85);margin-bottom: 0pc;display: flex;align-items: center;justify-content: center;flex-direction: column;height: 240px;width: 240px;margin: 0 auto;}
+.fxt-skill-section_custome .mockups .fxt-service-box-layout1{padding: 40px!important;background-color: rgba(12, 17, 41, 0.85);margin-bottom: 0pc;display: flex;align-items: center;justify-content: center;flex-direction: column;height: 240px;width: 240px;margin: 0 auto;gap:10px;}
 .fxt-skill-section_custome .mockups .item-title{font-size: 1.3rem;font-weight: 500;}
 .fxt-skill-section_custome .row{display: grid;grid-template-columns: auto auto auto auto;}
 /* .fxt-skill-section_custome .mockups .translate-left-10 .fxt-service-box-layout1, .fxt-skill-section_custome .mockups .translate-left-10{height: 100%;} */

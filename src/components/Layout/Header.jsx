@@ -33,7 +33,7 @@ export default function Header() {
                             <li><Link to="#section6">Pricing</Link></li>
                             <li><Link to="#section7">Blog</Link></li>
                             <li><Link to="#section8">Contact</Link></li>
-                            <li><Link to="/admin" >Admin</Link></li>
+                            {/* <li><Link to="/admin" >Admin</Link></li> */}
                         </ul>
                     </nav>
                 </div>

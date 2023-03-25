@@ -7,6 +7,7 @@ import map from "./../../template/media/figure/map.png";
 import Firebase from "./../../firebase/Firebase";
 import { Link } from "react-router-dom";
 import { Icon } from '../common/Icon';
+import GitHub from "./../github/Index";
 
 export function getAge(d1){
     var now = new Date();
@@ -14,6 +15,7 @@ export function getAge(d1){
     var diff = d2.getTime() - d1.getTime();
     return Math.floor(diff / (1000 * 60 * 60 * 24 * 365.25));
 }
+
 export const Skills = [
     {
         icon:"bx bxl-react text-primary",
@@ -228,15 +230,15 @@ export default function DashboardPage() {
         <section className="fxt-skill-section fxt-skill-section_custome" id="section3">
             <div className="container">
                 <div className="fxt-heading-layout1">
-                    <h2 className="heading-title">Professional <strong class="text-primary">Skill </strong></h2>
+                    <h2 className="heading-title">Professional <strong class="text-primary">Skills </strong></h2>
                     <div className="heading-line"></div>
-                </div>              
-                <div className="row">
+                </div>
+                <div className="row mb-5">
                     {Skills?.map((item, index)=>(
                         <div key={index} className="mockups has-animation active-animation">
                             <div className="translate-left-10 opacity-animation transition-200 transition-delay-100">
                                 <div className="fxt-service-box-layout1">
-                                    <div className="item-img animation-delay0">
+                                    <div className=" animation-delay0">
                                         <i className={`${item?.icon} `} />
                                     </div>
                                     <div className="item-content">
@@ -247,6 +249,7 @@ export default function DashboardPage() {
                         </div>
                     ))}
                 </div>
+                <GitHub/>
             </div>
         </section>
         <section className="fxt-skill-section" id="section3" hidden>
