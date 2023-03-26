@@ -790,7 +790,7 @@ export default function DashboardPage() {
             </div>
         </section>
 
-        <section className="fxt-contact-section bg-color-1" id="section8" data-bg-image="./template/media/figure/map.png " style={{backgroundImage: `url('${map}'})`}}>
+        <section className="fxt-contact-section bg-color-1" id="section8" data-bg-image="./template/media/figure/map.png " style={{backgroundImage: `url(${map})`}}>
             <div className="container">
                 <div className="fxt-heading-layout1">
                     <h2 className="heading-title">Contact Me</h2>

@@ -6,7 +6,8 @@ const initailData = {
     userLogin:{
         email:"user@gmail.com",
         password:"user123",
-    }
+    },
+    contributions:[]
 }
 
 export const chatReducers = (state = initailData, action) => {
@@ -15,6 +16,11 @@ export const chatReducers = (state = initailData, action) => {
     switch(action.type) {
         case ActionTypes.USER_ID :
             return { ...state, user_id : action.payload };
+        case ActionTypes.SET_STORE_GIT_REPO_STATUS:
+            return{
+                ...state,
+                contributions:action?.payload
+            }
         default:
             return state;
     }

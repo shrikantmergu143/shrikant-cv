@@ -1,46 +1,10 @@
-import React, { useEffect, useState } from 'react'
-import Calendar, {
-    createCalendarTheme,
-    Skeleton,
-    type CalendarData,
-     Props as CalendarProps,
-  } from 'react-activity-calendar';
+import React, { useEffect } from 'react'
+import Calendar, { Skeleton } from 'react-activity-calendar';
+import { useDispatch, useSelector } from "react-redux";
+import {setStoreGitRepoStatus} from "./../../redux/Action";
+
 export const API_URL = 'https://github-contributions-api.jogruber.de/v4/';
-export const transformData = (data, transformFn) => {
-    if (typeof transformFn !== 'function') {
-      return data;
-    }
-  
-    const transformedData = transformFn(data);
-  
-    if (!Array.isArray(transformedData)) {
-      throw new Error(`Passed function transformData must return a list of Day objects.`);
-    }
-  
-    if (transformedData.length > 0) {
-      const testObj = transformedData[0];
-  
-      if (typeof testObj.count !== 'number' || testObj.count < 0) {
-        throw new Error(
-          `Required property "count: number" missing or invalid. Got: ${testObj.count}`,
-        );
-      }
-  
-      if (!/\d{4}-\d{2}-\d{2}/.test(testObj.date)) {
-        throw new Error(
-          `Required property "date: YYYY-MM-DD" missing or invalid. Got: ${testObj.date}`,
-        );
-      }
-  
-      if (typeof testObj.level !== 'number' || testObj.level < 0 || testObj.level > 4) {
-        throw new Error(
-          `Required property "level: 0 | 1 | 2 | 3 | 4" missing or invalid: Got: ${testObj.level}.`,
-        );
-      }
-    }
-  
-    return transformedData;
-};
+
 export const theme = {
     level4: '#83d3ff',
     level3: '#1384dd',
@@ -49,29 +13,35 @@ export const theme = {
     level0: '#1b2140d9',
 }; 
 export default function Index() {
-  const [data, setData] = useState(null);
+  const contributions = useSelector((state)=>state?.allReducers?.contributions)
 
+  const dispatch = useDispatch();
     useEffect(() => {
         callFetchGithubData();
+        // eslint-disable-next-line
     }, []);
     const callFetchGithubData =async () =>{
         const response = await fetch(`${API_URL}shrikantmergu143?y=last`);
-        const data = await response.json();
-        const {contributions} = data
-        setData(contributions)
+        if(response?.status === 200){
+          const data = await response.json();
+          const {contributions} = data;
+          dispatch(setStoreGitRepoStatus(contributions));
+        }else{
+          dispatch(setStoreGitRepoStatus([]));
+        }
     }
-    if(data === null){
+    if(contributions?.length === 0){
         return <Skeleton loading />
     }
     const defaultLabels = {
         totalCount: `{{count}} contributions in the last year`,
       };
-      const totalCount =  data?.reduce((sum, day) => sum + day.count, 0);
+      const totalCount =  contributions?.reduce((sum, day) => sum + day.count, 0);
     //   const totalCount =  data?.reduce((sum, day) => sum + day.count, 0);
   return (
     <div className={"text-center shrikant_gitstatus"}>
         <Calendar
-            data={transformData(data, (data) => data)}
+            data={contributions}
             labels={Object.assign({}, defaultLabels, true)}
             totalCount={totalCount}
             theme={theme}

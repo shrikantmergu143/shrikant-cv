@@ -24,14 +24,15 @@ export default function Header() {
                 <div className="col-lg-10 d-flex justify-content-end">
                     <nav id="dropdown" className="template-main-menu">
                         <ul id="onepage_nav">
-                            <li className="current">
+                            <li //className="current"
+                            >
                                 <Link to="#wrapper">Home</Link></li>
                             <li><Link to="#section2">About</Link></li>
                             <li><Link to="#section3">Skills</Link></li>
                             <li><Link to="#section4">Experiences</Link></li>
-                            <li><Link to="#section5">Portfolio</Link></li>
-                            <li><Link to="#section6">Pricing</Link></li>
-                            <li><Link to="#section7">Blog</Link></li>
+                            {/* <li><Link to="#section5">Portfolio</Link></li> */}
+                            {/* <li><Link to="#section6">Pricing</Link></li> */}
+                            {/* <li><Link to="#section7">Blog</Link></li> */}
                             <li><Link to="#section8">Contact</Link></li>
                             {/* <li><Link to="/admin" >Admin</Link></li> */}
                         </ul>
