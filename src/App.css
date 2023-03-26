@@ -88,3 +88,7 @@
 .shrikant_gitstatus .react-activity-calendar{
     margin: 0 auto;
 }
+.my_works .fxt-service-box-layout1 img{ max-height: 150px; }
+.my_works .fxt-service-box-layout1{
+    padding:50px 30px 30px 30px
+}
