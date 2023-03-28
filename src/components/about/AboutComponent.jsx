@@ -17,7 +17,7 @@ export default function AboutComponent() {
         <div className="container">
             <div className="fxt-heading-layout1">
                 <h2 className="heading-title">About Me</h2>
-                <div className="heading-paragraph">There are many variations of passages of Lorem Ipsum available
+                <div hidden className="heading-paragraph">There are many variations of passages of Lorem Ipsum available
                 </div>
                 <div className="heading-line"></div>
             </div>
@@ -44,9 +44,9 @@ export default function AboutComponent() {
                                 <div className="col-md-5 col-12">
                                     <div className="info-list">
                                         <ul>
-                                            <li><span>Birthday:</span>30. 06. 1999</li>
-                                            <li><span>City:</span>Solapur</li>
-                                            <li><span>Study:</span>Solapur University</li>
+                                            <li><span >Birthday:</span>30/06/1999</li>
+                                            <li><span >City:</span>Solapur</li>
+                                            <li><span >Study:</span>Solapur University</li>
                                             {/* <li><span>Website:</span><Link to={"https://shrikantresume-react.vercel.app/"}>https://shrikantresume-react.vercel.app/</Link></li> */}
                                         </ul>
                                     </div>
