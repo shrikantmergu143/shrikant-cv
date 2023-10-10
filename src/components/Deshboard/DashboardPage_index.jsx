@@ -236,13 +236,13 @@ export default function DashboardPage() {
                 <div className="row">
                     <div className="col-lg-3 col-sm-6 col-12">
                         <div className="fxt-progress-box-layout1">
-                            <h2 className="counting-text counter">7</h2>
+                            <h2 className="counting-text counter">2</h2>
                             <div className="item-label">Project Works</div>
                         </div>
                     </div>
                     <div className="col-lg-3 col-sm-6 col-12">
                         <div className="fxt-progress-box-layout1">
-                            <h2 className="counting-text counter">6</h2>
+                            <h2 className="counting-text counter">2</h2>
                             <div className="item-label">Completed Project</div>
                         </div>
                     </div>
